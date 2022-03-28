@@ -1,0 +1,31 @@
+<div class="container">
+
+    <div class="col-4 mt-2">
+        <button class="btn btn-primary" type="button" [routerLink]="['/estudiante/form']">Nuevo Estudiante</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Nota</th>
+                <th scope="col">cantidadAsignatura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let objEstudiante of estudiantes">
+                <th scope="row">{{objEstudiante.id}}</th>
+                <td>{{objEstudiante.nombre}}</td>
+                <td>{{objEstudiante.edad}}</td>
+                <td>{{objEstudiante.nota}}</td>
+                <td>{{objEstudiante.cantidadAsignatura}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>

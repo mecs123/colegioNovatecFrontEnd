@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="col-4 mt-2">
+        <button class="btn btn-primary" type="button" [routerLink]="['/profesor/create']">Profesor</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Jornada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let objProfesor of profesores">
+                <th scope="row">{{objProfesor.id}}</th>
+                <td>{{objProfesor.nombre}}</td>
+                <td>{{objProfesor.edad}}</td>
+                <td>{{objProfesor.jornda}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
